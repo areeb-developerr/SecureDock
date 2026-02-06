@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Add Item - Vulnerable Web App{% endblock %}
+
+{% block content %}
+<h1>Add New Item</h1>
+<form method="POST" action="/add">
+    <div class="form-group">
+        <label for="name">Item Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+    </div>
+    <button type="submit" class="btn">Add Item</button>
+    <a href="/items" class="btn" style="background: #999; margin-left: 10px;">Cancel</a>
+</form>
+{% endblock %}
+

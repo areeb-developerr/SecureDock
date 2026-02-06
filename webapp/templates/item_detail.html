@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ item.name }} - Vulnerable Web App{% endblock %}
+
+{% block content %}
+<h1>{{ item.name }}</h1>
+<div class="item-card">
+    <p><strong>ID:</strong> {{ item.id }}</p>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+    <p><strong>Price:</strong> ${{ "%.2f"|format(item.price) }}</p>
+</div>
+<a href="/items" class="btn">Back to Items</a>
+{% endblock %}
+

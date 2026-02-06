@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Vulnerable Web App{% endblock %}
+
+{% block content %}
+<h1>Welcome to Vulnerable Web App</h1>
+<p>This is a deliberately insecure web application for testing Falco security monitoring.</p>
+
+<form action="/search" method="GET">
+    <input type="text" name="q" class="search-bar" placeholder="Search items...">
+    <button type="submit" class="btn">Search</button>
+</form>
+
+<div style="margin-top: 30px;">
+    <h2>Available Routes:</h2>
+    <ul style="line-height: 2;">
+        <li><strong>/</strong> - Home page (current)</li>
+        <li><strong>/items</strong> - List all items</li>
+        <li><strong>/item/&lt;id&gt;</strong> - View item details</li>
+        <li><strong>/add</strong> - Add new item</li>
+        <li><strong>/search?q=</strong> - Search items</li>
+        <li><strong>/login</strong> - Login page</li>
+    </ul>
+</div>
+{% endblock %}
+

@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  webapp:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.web
+    container_name: vulnerable-webapp
+    ports:
+      - "5000:5000"
+    networks:
+      - falco-network
+    labels:
+      - "falco/enabled=true"
+    volumes:
+      - ../webapp:/app
+    restart: unless-stopped
+
+  falco:
+    image: docker.io/falcosecurity/falco-no-driver:latest
+    container_name: falco-monitor
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/host/var/run/docker.sock:ro
+      - /dev:/host/dev:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /boot:/host/boot:ro
+      - /lib/modules:/host/lib/modules:ro
+      - /usr:/host/usr:ro
+      - ../falco-logs:/var/log/falco
+      - ./falco_rules_custom.yaml:/etc/falco/rules.d/custom_rules.yaml:ro
+    environment:
+      - FALCO_BPF_PROBE=""
+      - HOST_ROOT=/host
+    command:
+      - sh
+      - -c
+      - >-
+        /usr/bin/falco 
+        --cri /host/var/run/docker.sock 
+        -o json_output=true 
+        -o json_include_output_property=true 
+        -o json_include_tags=true 
+        -o log_stderr=true 
+        -o log_syslog=false 
+        | tee -a /var/log/falco/output.log
+    networks:
+      - falco-network
+    restart: unless-stopped
+    depends_on:
+      - webapp
+
+networks:
+  falco-network:
+    driver: bridge
+

@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  # DVWA - Damn Vulnerable Web Application
+  dvwa:
+    image: vulnerables/web-dvwa:latest
+    container_name: dvwa-container
+    ports:
+      - "8080:80"
+    networks:
+      - falco-network
+    labels:
+      - "falco/enabled=true"
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=dvwa
+      - MYSQL_USER=dvwa
+      - MYSQL_PASSWORD=p@ssw0rd
+
+  # OWASP Juice Shop - Modern vulnerable web app
+  juice-shop:
+    image: bkimminich/juice-shop:latest
+    container_name: juice-shop-container
+    ports:
+      - "3000:3000"
+    networks:
+      - falco-network
+    labels:
+      - "falco/enabled=true"
+    restart: unless-stopped
+
+  # WebGoat - OWASP WebGoat
+  webgoat:
+    image: webgoat/goatandwolf:latest
+    container_name: webgoat-container
+    ports:
+      - "8081:8080"
+      - "9090:9090"
+    networks:
+      - falco-network
+    labels:
+      - "falco/enabled=true"
+    restart: unless-stopped
+
+  # bWAPP - Buggy Web Application
+  bwapp:
+    image: raesene/bwapp:latest
+    container_name: bwapp-container
+    ports:
+      - "8082:80"
+    networks:
+      - falco-network
+    labels:
+      - "falco/enabled=true"
+    restart: unless-stopped
+
+  # Falco Monitor - monitors all containers
+  falco:
+    image: docker.io/falcosecurity/falco-no-driver:latest
+    container_name: falco-monitor-vulnerable
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/host/var/run/docker.sock:ro
+      - /dev:/host/dev:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /boot:/host/boot:ro
+      - /lib/modules:/host/lib/modules:ro
+      - /usr:/host/usr:ro
+      - ../falco-logs:/var/log/falco
+      - ./falco_rules_custom.yaml:/etc/falco/rules.d/custom_rules.yaml:ro
+    environment:
+      - FALCO_BPF_PROBE=""
+      - HOST_ROOT=/host
+    command:
+      - /usr/bin/falco
+      - --cri
+      - /host/var/run/docker.sock
+      - -o
+      - json_output=true
+      - -o
+      - json_include_output_property=true
+      - -o
+      - json_include_tags=true
+      - -o
+      - log_stderr=true
+      - -o
+      - log_syslog=false
+      - -o
+      - log_file=/var/log/falco/output.log
+    networks:
+      - falco-network
+    restart: unless-stopped
+    depends_on:
+      - dvwa
+      - juice-shop
+
+networks:
+  falco-network:
+    driver: bridge
+

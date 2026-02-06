@@ -1,0 +1,2099 @@
+{
+  "monitoring_session": {
+    "start_time": "2025-11-18T11:37:35.129382",
+    "end_time": "2025-11-18T11:45:33.706149",
+    "window_size_seconds": 2,
+    "source": "falco_stderr"
+  },
+  "summary": {
+    "total_windows": 229,
+    "malicious_windows": 3,
+    "benign_windows": 226,
+    "total_events": 12,
+    "total_malicious_events": 12,
+    "monitored_containers": [
+      "mywebapp"
+    ]
+  },
+  "detailed_windows": [
+    {
+      "start_time": "2025-11-18T11:37:35.129382",
+      "end_time": "2025-11-18T11:37:37.237195",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:37.237195",
+      "end_time": "2025-11-18T11:37:39.330090",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:39.330090",
+      "end_time": "2025-11-18T11:37:41.416382",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:41.416382",
+      "end_time": "2025-11-18T11:37:43.500120",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:43.500120",
+      "end_time": "2025-11-18T11:37:45.590602",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:45.590602",
+      "end_time": "2025-11-18T11:37:47.677357",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:47.677357",
+      "end_time": "2025-11-18T11:37:49.779098",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:49.779098",
+      "end_time": "2025-11-18T11:37:51.867852",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:51.867852",
+      "end_time": "2025-11-18T11:37:53.948319",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:53.948319",
+      "end_time": "2025-11-18T11:37:56.033344",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:56.033344",
+      "end_time": "2025-11-18T11:37:58.120349",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:37:58.120349",
+      "end_time": "2025-11-18T11:38:00.202029",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:00.202029",
+      "end_time": "2025-11-18T11:38:02.301854",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:02.301854",
+      "end_time": "2025-11-18T11:38:04.386413",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:04.386413",
+      "end_time": "2025-11-18T11:38:06.471274",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:06.471274",
+      "end_time": "2025-11-18T11:38:08.561108",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:08.561108",
+      "end_time": "2025-11-18T11:38:10.663130",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:10.663130",
+      "end_time": "2025-11-18T11:38:12.754203",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:12.754203",
+      "end_time": "2025-11-18T11:38:14.844865",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:14.844865",
+      "end_time": "2025-11-18T11:38:16.926105",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:16.926105",
+      "end_time": "2025-11-18T11:38:19.012044",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:19.012044",
+      "end_time": "2025-11-18T11:38:21.110190",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:21.110190",
+      "end_time": "2025-11-18T11:38:23.204966",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:23.204966",
+      "end_time": "2025-11-18T11:38:25.299154",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:25.299154",
+      "end_time": "2025-11-18T11:38:27.386676",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:27.386676",
+      "end_time": "2025-11-18T11:38:29.468039",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:29.468039",
+      "end_time": "2025-11-18T11:38:31.556887",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:31.556887",
+      "end_time": "2025-11-18T11:38:33.640508",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:33.640508",
+      "end_time": "2025-11-18T11:38:35.729254",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:35.729254",
+      "end_time": "2025-11-18T11:38:37.810515",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:37.810515",
+      "end_time": "2025-11-18T11:38:39.900946",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:39.900946",
+      "end_time": "2025-11-18T11:38:41.986506",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:41.986506",
+      "end_time": "2025-11-18T11:38:44.077985",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:44.077985",
+      "end_time": "2025-11-18T11:38:46.159893",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:46.159893",
+      "end_time": "2025-11-18T11:38:48.242117",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:48.242117",
+      "end_time": "2025-11-18T11:38:50.321525",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:50.321525",
+      "end_time": "2025-11-18T11:38:52.400784",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:52.400784",
+      "end_time": "2025-11-18T11:38:54.481527",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:54.481527",
+      "end_time": "2025-11-18T11:38:56.562783",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:56.562783",
+      "end_time": "2025-11-18T11:38:58.647843",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:38:58.647843",
+      "end_time": "2025-11-18T11:39:00.734339",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:00.734339",
+      "end_time": "2025-11-18T11:39:02.871366",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:02.871366",
+      "end_time": "2025-11-18T11:39:04.961223",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:04.961223",
+      "end_time": "2025-11-18T11:39:07.069389",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:07.069389",
+      "end_time": "2025-11-18T11:39:09.152838",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:09.152838",
+      "end_time": "2025-11-18T11:39:11.257081",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:11.257081",
+      "end_time": "2025-11-18T11:39:13.339450",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:13.339450",
+      "end_time": "2025-11-18T11:39:15.451839",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:15.451839",
+      "end_time": "2025-11-18T11:39:17.540011",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:17.540011",
+      "end_time": "2025-11-18T11:39:19.625855",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:19.625855",
+      "end_time": "2025-11-18T11:39:21.712835",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:21.712835",
+      "end_time": "2025-11-18T11:39:23.810785",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:23.810785",
+      "end_time": "2025-11-18T11:39:25.892188",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:25.892188",
+      "end_time": "2025-11-18T11:39:27.974100",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:27.974100",
+      "end_time": "2025-11-18T11:39:30.062499",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:30.062499",
+      "end_time": "2025-11-18T11:39:32.173344",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:32.173344",
+      "end_time": "2025-11-18T11:39:34.270167",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:34.270167",
+      "end_time": "2025-11-18T11:39:36.357304",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:36.357304",
+      "end_time": "2025-11-18T11:39:38.457150",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:38.457150",
+      "end_time": "2025-11-18T11:39:40.540649",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:40.540649",
+      "end_time": "2025-11-18T11:39:42.626465",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:42.626465",
+      "end_time": "2025-11-18T11:39:44.712844",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:44.712844",
+      "end_time": "2025-11-18T11:39:46.799830",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:46.799830",
+      "end_time": "2025-11-18T11:39:48.883111",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:48.883111",
+      "end_time": "2025-11-18T11:39:50.968724",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:50.968724",
+      "end_time": "2025-11-18T11:39:53.061590",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:53.061590",
+      "end_time": "2025-11-18T11:39:55.146878",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:55.146878",
+      "end_time": "2025-11-18T11:39:57.287762",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:57.287762",
+      "end_time": "2025-11-18T11:39:59.379838",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:39:59.379838",
+      "end_time": "2025-11-18T11:40:01.458871",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:01.458871",
+      "end_time": "2025-11-18T11:40:03.580995",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:03.580995",
+      "end_time": "2025-11-18T11:40:05.679506",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:05.679506",
+      "end_time": "2025-11-18T11:40:07.768029",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:07.768029",
+      "end_time": "2025-11-18T11:40:09.858836",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:09.858836",
+      "end_time": "2025-11-18T11:40:11.946399",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:11.946399",
+      "end_time": "2025-11-18T11:40:14.045197",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:14.045197",
+      "end_time": "2025-11-18T11:40:16.126368",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:16.126368",
+      "end_time": "2025-11-18T11:40:18.209983",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:18.209983",
+      "end_time": "2025-11-18T11:40:20.297116",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:20.297116",
+      "end_time": "2025-11-18T11:40:22.380408",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:22.380408",
+      "end_time": "2025-11-18T11:40:24.461758",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:24.461758",
+      "end_time": "2025-11-18T11:40:26.543708",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:26.543708",
+      "end_time": "2025-11-18T11:40:28.627258",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:28.627258",
+      "end_time": "2025-11-18T11:40:30.736432",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:30.736432",
+      "end_time": "2025-11-18T11:40:32.820152",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:32.820152",
+      "end_time": "2025-11-18T11:40:34.902176",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:34.902176",
+      "end_time": "2025-11-18T11:40:37.005350",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:37.005350",
+      "end_time": "2025-11-18T11:40:39.087607",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:39.087607",
+      "end_time": "2025-11-18T11:40:41.170631",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:41.170631",
+      "end_time": "2025-11-18T11:40:43.256697",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:43.256697",
+      "end_time": "2025-11-18T11:40:45.342409",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:45.342409",
+      "end_time": "2025-11-18T11:40:47.424538",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:47.424538",
+      "end_time": "2025-11-18T11:40:49.514616",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:49.514616",
+      "end_time": "2025-11-18T11:40:51.597570",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:51.597570",
+      "end_time": "2025-11-18T11:40:53.679186",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:53.679186",
+      "end_time": "2025-11-18T11:40:55.768155",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:55.768155",
+      "end_time": "2025-11-18T11:40:57.851767",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:57.851767",
+      "end_time": "2025-11-18T11:40:59.939431",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:40:59.939431",
+      "end_time": "2025-11-18T11:41:02.025077",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:02.025077",
+      "end_time": "2025-11-18T11:41:04.110101",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:04.110101",
+      "end_time": "2025-11-18T11:41:06.209826",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:06.209826",
+      "end_time": "2025-11-18T11:41:08.296317",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:08.296317",
+      "end_time": "2025-11-18T11:41:10.385132",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:10.385132",
+      "end_time": "2025-11-18T11:41:12.474752",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:12.474752",
+      "end_time": "2025-11-18T11:41:14.572005",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:14.572005",
+      "end_time": "2025-11-18T11:41:16.658199",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:16.658199",
+      "end_time": "2025-11-18T11:41:18.762992",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:18.762992",
+      "end_time": "2025-11-18T11:41:20.844659",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:20.844659",
+      "end_time": "2025-11-18T11:41:22.927780",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:22.927780",
+      "end_time": "2025-11-18T11:41:25.013311",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:25.013311",
+      "end_time": "2025-11-18T11:41:27.103398",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:27.103398",
+      "end_time": "2025-11-18T11:41:29.200742",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:29.200742",
+      "end_time": "2025-11-18T11:41:31.285581",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:31.285581",
+      "end_time": "2025-11-18T11:41:33.368790",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:33.368790",
+      "end_time": "2025-11-18T11:41:35.474520",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:35.474520",
+      "end_time": "2025-11-18T11:41:37.557580",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:37.557580",
+      "end_time": "2025-11-18T11:41:39.646982",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:39.646982",
+      "end_time": "2025-11-18T11:41:41.734525",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:41.734525",
+      "end_time": "2025-11-18T11:41:43.819856",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:43.819856",
+      "end_time": "2025-11-18T11:41:45.934162",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:45.934162",
+      "end_time": "2025-11-18T11:41:48.020708",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:48.020708",
+      "end_time": "2025-11-18T11:41:50.112240",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:50.112240",
+      "end_time": "2025-11-18T11:41:52.204483",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:52.204483",
+      "end_time": "2025-11-18T11:41:54.293214",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:54.293214",
+      "end_time": "2025-11-18T11:41:56.387654",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:56.387654",
+      "end_time": "2025-11-18T11:41:58.510837",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:41:58.510837",
+      "end_time": "2025-11-18T11:42:00.597663",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:00.597663",
+      "end_time": "2025-11-18T11:42:02.697624",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:02.697624",
+      "end_time": "2025-11-18T11:42:04.783969",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:04.783969",
+      "end_time": "2025-11-18T11:42:06.868131",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:06.868131",
+      "end_time": "2025-11-18T11:42:08.972853",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:08.972853",
+      "end_time": "2025-11-18T11:42:11.059425",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:11.059425",
+      "end_time": "2025-11-18T11:42:13.152675",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:13.152675",
+      "end_time": "2025-11-18T11:42:15.236506",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:15.236506",
+      "end_time": "2025-11-18T11:42:17.320465",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:17.320465",
+      "end_time": "2025-11-18T11:42:19.419167",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:19.419167",
+      "end_time": "2025-11-18T11:42:21.503011",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:21.503011",
+      "end_time": "2025-11-18T11:42:23.590467",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:23.590467",
+      "end_time": "2025-11-18T11:42:25.674834",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:25.674834",
+      "end_time": "2025-11-18T11:42:27.759261",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:27.759261",
+      "end_time": "2025-11-18T11:42:29.858840",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:29.858840",
+      "end_time": "2025-11-18T11:42:31.939744",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:31.939744",
+      "end_time": "2025-11-18T11:42:34.040865",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:34.040865",
+      "end_time": "2025-11-18T11:42:36.138247",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:36.138247",
+      "end_time": "2025-11-18T11:42:38.219958",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:38.219958",
+      "end_time": "2025-11-18T11:42:40.310256",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:40.310256",
+      "end_time": "2025-11-18T11:42:42.390327",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:42.390327",
+      "end_time": "2025-11-18T11:42:44.472994",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:44.472994",
+      "end_time": "2025-11-18T11:42:46.564247",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:46.564247",
+      "end_time": "2025-11-18T11:42:48.659554",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:48.659554",
+      "end_time": "2025-11-18T11:42:50.744467",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:50.744467",
+      "end_time": "2025-11-18T11:42:52.830839",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:52.830839",
+      "end_time": "2025-11-18T11:42:54.927138",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:54.927138",
+      "end_time": "2025-11-18T11:42:57.010318",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:57.010318",
+      "end_time": "2025-11-18T11:42:59.096629",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:42:59.096629",
+      "end_time": "2025-11-18T11:43:01.181263",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:01.181263",
+      "end_time": "2025-11-18T11:43:03.267516",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:03.267516",
+      "end_time": "2025-11-18T11:43:05.354482",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:05.354482",
+      "end_time": "2025-11-18T11:43:07.443079",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:07.443079",
+      "end_time": "2025-11-18T11:43:09.530348",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:09.530348",
+      "end_time": "2025-11-18T11:43:11.618763",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:11.618763",
+      "end_time": "2025-11-18T11:43:13.706263",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:13.706263",
+      "end_time": "2025-11-18T11:43:15.790046",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:15.790046",
+      "end_time": "2025-11-18T11:43:17.874463",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:17.874463",
+      "end_time": "2025-11-18T11:43:19.954296",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:19.954296",
+      "end_time": "2025-11-18T11:43:22.043440",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:22.043440",
+      "end_time": "2025-11-18T11:43:24.125855",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:24.125855",
+      "end_time": "2025-11-18T11:43:26.206835",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:26.206835",
+      "end_time": "2025-11-18T11:43:28.291879",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:28.291879",
+      "end_time": "2025-11-18T11:43:30.389516",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:30.389516",
+      "end_time": "2025-11-18T11:43:32.493951",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:32.493951",
+      "end_time": "2025-11-18T11:43:34.583558",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:34.583558",
+      "end_time": "2025-11-18T11:43:36.665866",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:36.665866",
+      "end_time": "2025-11-18T11:43:38.748607",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:38.748607",
+      "end_time": "2025-11-18T11:43:40.834966",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:40.834966",
+      "end_time": "2025-11-18T11:43:42.919103",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:42.919103",
+      "end_time": "2025-11-18T11:43:45.001534",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:45.001534",
+      "end_time": "2025-11-18T11:43:47.088360",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:47.088360",
+      "end_time": "2025-11-18T11:43:49.170895",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:49.170895",
+      "end_time": "2025-11-18T11:43:51.261311",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:51.261311",
+      "end_time": "2025-11-18T11:43:53.343605",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:53.343605",
+      "end_time": "2025-11-18T11:43:55.443101",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:55.443101",
+      "end_time": "2025-11-18T11:43:57.529620",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:57.529620",
+      "end_time": "2025-11-18T11:43:59.613433",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:43:59.613433",
+      "end_time": "2025-11-18T11:44:01.693291",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:01.693291",
+      "end_time": "2025-11-18T11:44:03.783728",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:03.783728",
+      "end_time": "2025-11-18T11:44:05.890473",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:05.890473",
+      "end_time": "2025-11-18T11:44:07.976619",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:07.976619",
+      "end_time": "2025-11-18T11:44:10.068661",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:10.068661",
+      "end_time": "2025-11-18T11:44:12.151777",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:12.151777",
+      "end_time": "2025-11-18T11:44:14.239021",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:14.239021",
+      "end_time": "2025-11-18T11:44:16.327181",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:16.327181",
+      "end_time": "2025-11-18T11:44:18.411205",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:18.411205",
+      "end_time": "2025-11-18T11:44:20.495727",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:20.495727",
+      "end_time": "2025-11-18T11:44:22.607025",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:22.607025",
+      "end_time": "2025-11-18T11:44:24.688590",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:24.688590",
+      "end_time": "2025-11-18T11:44:26.771565",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:26.771565",
+      "end_time": "2025-11-18T11:44:28.852732",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:28.852732",
+      "end_time": "2025-11-18T11:44:30.937997",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:30.937997",
+      "end_time": "2025-11-18T11:44:33.028668",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:33.028668",
+      "end_time": "2025-11-18T11:44:35.120602",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:35.120602",
+      "end_time": "2025-11-18T11:44:37.205809",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:37.205809",
+      "end_time": "2025-11-18T11:44:39.292293",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:39.292293",
+      "end_time": "2025-11-18T11:44:41.387165",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:41.387165",
+      "end_time": "2025-11-18T11:44:43.476132",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:43.476132",
+      "end_time": "2025-11-18T11:44:45.560392",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:45.560392",
+      "end_time": "2025-11-18T11:44:47.645499",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:47.645499",
+      "end_time": "2025-11-18T11:44:49.728880",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:49.728880",
+      "end_time": "2025-11-18T11:44:51.815038",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:51.815038",
+      "end_time": "2025-11-18T11:44:53.898642",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:53.898642",
+      "end_time": "2025-11-18T11:44:55.981462",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:55.981462",
+      "end_time": "2025-11-18T11:44:58.063576",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:44:58.063576",
+      "end_time": "2025-11-18T11:45:00.150506",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:00.150506",
+      "end_time": "2025-11-18T11:45:02.253849",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:02.253849",
+      "end_time": "2025-11-18T11:45:04.380275",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:04.380275",
+      "end_time": "2025-11-18T11:45:06.473625",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:06.473625",
+      "end_time": "2025-11-18T11:45:08.571890",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:08.571890",
+      "end_time": "2025-11-18T11:45:10.655052",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:10.655052",
+      "end_time": "2025-11-18T11:45:12.745155",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:12.745155",
+      "end_time": "2025-11-18T11:45:14.833434",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:14.833434",
+      "end_time": "2025-11-18T11:45:16.923945",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:16.923945",
+      "end_time": "2025-11-18T11:45:19.028027",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:19.028027",
+      "end_time": "2025-11-18T11:45:21.117750",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": []
+    },
+    {
+      "start_time": "2025-11-18T11:45:21.117750",
+      "end_time": "2025-11-18T11:45:23.202333",
+      "status": "malicious",
+      "event_count": 2,
+      "malicious_count": 2,
+      "malicious_types": [
+        "shell_spawned"
+      ],
+      "containers": [
+        "mywebapp"
+      ]
+    },
+    {
+      "start_time": "2025-11-18T11:45:23.202333",
+      "end_time": "2025-11-18T11:45:25.351453",
+      "status": "malicious",
+      "event_count": 8,
+      "malicious_count": 8,
+      "malicious_types": [
+        "shell_spawned"
+      ],
+      "containers": [
+        "mywebapp"
+      ]
+    },
+    {
+      "start_time": "2025-11-18T11:45:25.351453",
+      "end_time": "2025-11-18T11:45:27.439677",
+      "status": "malicious",
+      "event_count": 2,
+      "malicious_count": 2,
+      "malicious_types": [
+        "shell_spawned"
+      ],
+      "containers": [
+        "mywebapp"
+      ]
+    },
+    {
+      "start_time": "2025-11-18T11:45:27.439677",
+      "end_time": "2025-11-18T11:45:29.530027",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": [
+        "mywebapp"
+      ]
+    },
+    {
+      "start_time": "2025-11-18T11:45:29.530027",
+      "end_time": "2025-11-18T11:45:31.620643",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": [
+        "mywebapp"
+      ]
+    },
+    {
+      "start_time": "2025-11-18T11:45:31.620643",
+      "end_time": "2025-11-18T11:45:33.706149",
+      "status": "benign",
+      "event_count": 0,
+      "malicious_count": 0,
+      "malicious_types": [],
+      "containers": [
+        "mywebapp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+# Custom Falco Rules - Enhanced for Verified Attack Patterns
+# These rules provide the granular events needed for the Context Engine
+
+# --- 1. Network & Reverse Shell Indicators ---
+
+- rule: Outbound Connection Detected
+  desc: Detect any outbound network connection from the container
+  condition: >
+    evt.type = connect
+    and evt.dir = <
+    and (fd.sip != 127.0.0.1)
+    and container
+  output: >
+    Outbound Connection Initiated (user=%user.name command=%proc.cmdline connection=%fd.name container_id=%container.id)
+  priority: NOTICE
+  tags: [network, mitre_exfiltration]
+
+- rule: Shell Spawned in Container
+  desc: Detect shell processes spawned in containers
+  condition: >
+    spawned_process
+    and container
+    and (proc.name in (sh, bash, dash, zsh, ksh, csh, tcsh))
+    and proc.pname exists
+  output: >
+    Shell Spawned (user=%user.name parent=%proc.pname cmdline=%proc.cmdline container_id=%container.id)
+  priority: WARNING
+  tags: [container, shell, mitre_execution]
+
+# --- 2. Crypto Mining Indicators ---
+
+- rule: Crypto Miner Binary Execution
+  desc: Detect execution of common crypto mining binaries
+  condition: >
+    spawned_process
+    and container
+    and (proc.name in (minerd, xmrig, xmr-stak, cpuminer, ethminer) or proc.cmdline contains "stratum+tcp")
+  output: >
+    Crypto Miner Execution (user=%user.name command=%proc.cmdline container_id=%container.id)
+  priority: CRITICAL
+  tags: [mitre_impact, crypto]
+
+- rule: Execution from /tmp
+  desc: Detect execution of binaries from /tmp directory (common for droppers)
+  condition: >
+    spawned_process
+    and container
+    and proc.exepath startswith /tmp/
+  output: >
+    Binary Executed from /tmp (user=%user.name command=%proc.cmdline file=%proc.exepath container_id=%container.id)
+  priority: WARNING
+  tags: [mitre_execution]
+
+# --- 3. Sensitive File Access (Creds/Data) ---
+
+- rule: Sensitive File Read
+  desc: Detect reads of sensitive files
+  condition: >
+    open_read
+    and (fd.name in (/etc/shadow, /etc/sudoers, /etc/pam.conf) or fd.name contains ".ssh/id_")
+    and container
+  output: >
+    Sensitive File Read (user=%user.name command=%proc.cmdline file=%fd.name container_id=%container.id)
+  priority: WARNING
+  tags: [mitre_credential_access]
+
+# --- 4. Web Shell / Persistence Indicators ---
+
+- rule: Write to Webroot
+  desc: Detect writes to common web directories
+  condition: >
+    open_write
+    and (fd.name startswith /var/www/ or fd.name startswith /app/ or fd.name startswith /usr/share/nginx/)
+    and (fd.name endswith .php or fd.name endswith .py or fd.name endswith .sh or fd.name endswith .jsp)
+    and container
+  output: >
+    Script Written to Webroot (user=%user.name command=%proc.cmdline file=%fd.name container_id=%container.id)
+  priority: WARNING
+  tags: [mitre_persistence]
+
+# --- 5. Privilege Escalation Indicators ---
+
+- rule: Setuid/Setgid Program Executed
+  desc: Detect execution of setuid/setgid programs
+  condition: >
+    spawned_process
+    and container
+    and (proc.name in (su, sudo, sg, newgrp) or proc.pcmdline contains "chmod +s")
+  output: >
+    PrivEsc Tool Executed (user=%user.name command=%proc.cmdline container_id=%container.id)
+  priority: NOTICE
+  tags: [mitre_privilege_escalation]
+
+# --- 6. Binary Planting ---
+
+- rule: Write to Binary Directory
+  desc: Detect writes to system binary directories
+  condition: >
+    open_write
+    and (fd.name startswith /bin/ or fd.name startswith /sbin/ or fd.name startswith /usr/bin/ or fd.name startswith /usr/sbin/)
+    and container
+  output: >
+    System Binary Modification (user=%user.name command=%proc.cmdline file=%fd.name container_id=%container.id)
+  priority: CRITICAL
+  tags: [mitre_persistence]
+
+- rule: Timestomping Detected
+  desc: Detect usage of touch to modify timestamps (often covers tracks after planting)
+  condition: >
+    spawned_process
+    and container
+    and proc.name = touch
+  output: >
+    Timestamp Modification (user=%user.name command=%proc.cmdline container_id=%container.id)
+  priority: INFO
+  tags: [mitre_defense_evasion]
+
+# --- 7. Container Escape Indicators ---
+
+- rule: Sensitive Kernel File Access
+  desc: Detect access to sensitive kernel files used for escape info
+  condition: >
+    open_read
+    and (fd.name startswith /proc/kcore or fd.name startswith /proc/sched_debug or fd.name startswith /sys/kernel/debug)
+    and container
+  output: >
+    Kernel Debug Interface Accessed (user=%user.name command=%proc.cmdline file=%fd.name container_id=%container.id)
+  priority: WARNING
+  tags: [mitre_privilege_escalation]
+
+- rule: Privileged Component Execution
+  desc: Detect execution of tools often used for escapes
+  condition: >
+    spawned_process
+    and container
+    and (proc.name in (mount, umount, nsenter, capsh, docker))
+  output: >
+    Container Management Tool Executed (user=%user.name command=%proc.cmdline container_id=%container.id)
+  priority: WARNING
+  tags: [mitre_privilege_escalation]
+
+# --- 8. Ransomware Indicators ---
+
+- rule: Bulk File Renaming or Deletion
+  desc: Detect high frequency of file renames (encryption behavior) or deletions
+  condition: >
+    (evt.type = rename or evt.type = unlink or evt.type = unlinkat)
+    and container
+  output: >
+    File Rename/Delete (user=%user.name command=%proc.cmdline file=%fd.name container_id=%container.id)
+  priority: INFO
+  tags: [mitre_impact]
+
+# --- 9. Log Tampering ---
+
+- rule: Log File Modification
+  desc: Detect writing or deletion of log files
+  condition: >
+    (open_write or evt.type = unlink or evt.type = unlinkat)
+    and (fd.name startswith /var/log or fd.name startswith /var/audit)
+    and not (fd.name = /var/log/falco/output.log)
+    and container
+  output: >
+    Log File Tampering (user=%user.name command=%proc.cmdline file=%fd.name container_id=%container.id)
+  priority: WARNING
+  tags: [mitre_defense_evasion]
+
+# --- 10. Active Reconnaissance ---
+
+- rule: Reconnaissance Tool Execution
+  desc: Detect execution of common recon tools
+  condition: >
+    spawned_process
+    and container
+    and (proc.name in (id, whoami, uname, hostname, ifconfig, ip, netstat, ss, lsof, ps) or proc.cmdline contains "/proc/net/tcp")
+  output: >
+    Reconnaissance Tool Usage (user=%user.name command=%proc.cmdline container_id=%container.id)
+  priority: NOTICE
+  tags: [mitre_discovery]
+

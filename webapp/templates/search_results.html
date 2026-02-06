@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Search Results - Vulnerable Web App{% endblock %}
+
+{% block content %}
+<h1>Search Results</h1>
+<p>Search query: <strong>{{ query }}</strong></p>
+
+<form action="/search" method="GET" style="margin-bottom: 20px;">
+    <input type="text" name="q" class="search-bar" placeholder="Search items..." value="{{ query }}">
+    <button type="submit" class="btn">Search</button>
+</form>
+
+{% if results %}
+    <p>Found {{ results|length }} result(s):</p>
+    {% for item in results %}
+    <div class="item-card">
+        <h3><a href="/item/{{ item.id }}" style="text-decoration: none; color: #667eea;">{{ item.name }}</a></h3>
+        <p><strong>Description:</strong> {{ item.description }}</p>
+        <p><strong>Price:</strong> ${{ "%.2f"|format(item.price) }}</p>
+    </div>
+    {% endfor %}
+{% else %}
+    <p>No results found for "{{ query }}".</p>
+{% endif %}
+{% endblock %}
+
