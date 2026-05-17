@@ -1,6 +1,18 @@
 version: '3.8'
 
 services:
+  # Benign container - simple static nginx server (no attacks)
+  benign-nginx:
+    image: nginx:alpine
+    container_name: benign-nginx
+    ports:
+      - "8888:80"
+    networks:
+      - falco-network
+    labels:
+      - "falco/enabled=true"
+    restart: unless-stopped
+
   webapp:
     build:
       context: ..
@@ -17,9 +29,18 @@ services:
     restart: unless-stopped
 
   falco:
-    image: docker.io/falcosecurity/falco-no-driver:latest
+    image: docker.io/falcosecurity/falco:latest
     container_name: falco-monitor
     privileged: true
+    pid: host
+    security_opt:
+      - apparmor:unconfined
+    cap_add:
+      - SYS_ADMIN
+      - SYS_PTRACE
+      - SYS_RESOURCE
+      - BPF
+      - PERFMON
     volumes:
       - /var/run/docker.sock:/host/var/run/docker.sock:ro
       - /dev:/host/dev:ro
@@ -28,6 +49,8 @@ services:
       - /boot:/host/boot:ro
       - /lib/modules:/host/lib/modules:ro
       - /usr:/host/usr:ro
+      - /sys/kernel/btf:/sys/kernel/btf:ro
+      - /sys/kernel/debug:/sys/kernel/debug:ro
       - ../falco-logs:/var/log/falco
       - ./falco_rules_custom.yaml:/etc/falco/rules.d/custom_rules.yaml:ro
     environment:
@@ -38,7 +61,8 @@ services:
       - -c
       - >-
         /usr/bin/falco 
-        --cri /host/var/run/docker.sock 
+        -o engine.kind=modern_ebpf 
+        -o container_engines.cri.sockets[]=/host/var/run/docker.sock 
         -o json_output=true 
         -o json_include_output_property=true 
         -o json_include_tags=true 
@@ -50,6 +74,8 @@ services:
     restart: unless-stopped
     depends_on:
       - webapp
+    ulimits:
+      memlock: -1
 
 networks:
   falco-network:
