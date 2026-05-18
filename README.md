@@ -1,18 +1,18 @@
-# Secure Dock — Container Security Monitoring with Falco
+# Secure Dock — Container Security Monitoring
 
-Real-time container security monitoring system that uses **Falco** to detect malicious activity inside Docker containers and displays alerts on a live dashboard.
+Real-time container security monitoring system that detects malicious activity inside Docker containers and displays alerts on a live dashboard.
 
 ## Architecture
 
 ```
 ┌──────────────────┐    ┌─────────────┐    ┌─────────────┐    ┌──────────────┐
-│  Docker Containers│───▷│    Falco     │───▷│   Backend   │───▷│   Frontend   │
+│  Docker Containers│───▷│  Graph     │───▷│   Backend   │───▷│   Frontend   │
 │  (monitored)     │    │  (eBPF)     │    │  (Django)   │    │  (React)     │
 └──────────────────┘    └─────────────┘    └─────────────┘    └──────────────┘
        syscalls          output.log        REST + WebSocket     Dashboard
 ```
 
-**Flow:** Container syscalls → Falco detects via eBPF → Writes JSON to `output.log` → Backend ingests & classifies events → Frontend displays real-time alerts
+**Flow:** Container syscalls → Writes JSON to `output.log` → Backend ingests & classifies events → Frontend displays real-time alerts
 
 ## Project Structure
 
@@ -21,7 +21,6 @@ secure-dock/
 ├── attacks/                 # Attack & test scripts
 ├── backend/                 # Django REST API + WebSocket server
 ├── docker/                  # Docker Compose files + Falco rules
-├── falco-logs/              # Falco runtime output logs
 ├── secure-dock-frontend/    # React + Vite dashboard
 └── webapp/                  # Vulnerable Flask webapp (target)
 ```
@@ -39,7 +38,7 @@ secure-dock/
 
 You need **5 terminals** to run the full stack. Follow each terminal setup below in order.
 
-### Terminal 1 — Docker Containers + Falco
+### Terminal 1 — Docker Containers
 
 ```bash
 cd docker
@@ -74,7 +73,7 @@ source venv/bin/activate
 python manage.py ingest_falco_logs --log-file ../falco-logs/output.log --tail
 ```
 
-This tails the Falco log file and:
+This:
 - Parses each JSON event
 - Classifies it as malicious or benign
 - Saves it to the database
@@ -225,25 +224,9 @@ Custom detection rules are defined in `docker/falco_rules_custom.yaml`:
 | Bulk File Renaming or Deletion | Mass file rename/delete operations | Info |
 | Timestomping Detected | touch command usage | Info |
 
----
-
-## Event Classification
-
-Events are classified based on Falco priority:
-
-| Priority | Classification | Description |
-|----------|---------------|-------------|
-| Critical | 🔴 Malicious | Severe threats (binary planting, crypto mining) |
-| Error | 🔴 Malicious | System errors indicating attacks |
-| Warning | 🟠 Malicious | Active attacks (shell spawn, file reads) |
-| Notice | 🟡 Malicious | Suspicious activity (recon, priv esc) |
-| Info | 🟢 Benign | Routine operations (file ops, housekeeping) |
-
----
-
 ## Tech Stack
 
-- **Monitoring:** Falco (modern eBPF engine)
+- **Monitoring:** (modern eBPF engine)
 - **Backend:** Django, Django REST Framework, Django Channels (WebSocket)
 - **Frontend:** React, Vite, TypeScript
 - **Database:** SQLite
